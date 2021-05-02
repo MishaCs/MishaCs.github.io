@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Bitcoin portfolio</title>
+    <title>Why bitcoin</title>
+
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
 </head>
 
 <body>
-
     <header class="header">
     <marquee behavior="scroll" weight="150" loop="infinity" scrollamount="10" class="ticker" onmouseover="this.stop()" onmouseout="this.start()">
         <div class="ticker__wrap marquee-item">
@@ -158,293 +162,43 @@
     </div>
 </div>
 
-    <div class="container">
-        <section class="calculator">
-            <h1 class="calculator__title">Bitcoin Calculator</h1>
-            <div class="calculator-tabs">
-                <a href="bitcoin-investing.html" class="calculator-tabs__item">
-                    BTC Investing
-                </a>
-                <button class=" calculator-tabs__item  calculator-tabs__item--active">
-                    BTC % in portfolio
-                </button>
-            </div>
-
-            <div class="calculator-content">
-                <div class="calculator__header">
-                    <form action="" class="form calculator__form">
-                        <label class="input ">
-                            <div class="input__label">
-                                Asset
-                            </div>
-                            <div class="input-wrap input-asset">
-                                <select class="custom-select">
-                                    <option value="spx">spx</option>
-                                    <option value="spx2">spx2</option>
-                                </select>
-                            </div>
-                        </label>
-                        <label class="input input-animate">
-                            <div class="input__label">
-                                Portfolio value
-                            </div>
-                            <div class="input-wrap input-investment">
-                                <input type="number" class="required-input">
-                            </div>
-                        </label>
-                        <label class="input input-animate">
-                            <div class="input__label">
-                                % BTC
-                            </div>
-                            <div class="input-wrap input-btc">
-                                <input type="number" class="required-input">
-                            </div>
-                        </label>
-                        <label class="input input-animate">
-                            <div class="input__label">
-                                Starting Date
-                            </div>
-                            <div class="input-wrap input-starting ">
-                                <input type="text" class="required-input custom-date">
-                            </div>
-                        </label>
-
-                        <div class="form__buttons">
-                            <input type="reset" class="button-gray" value="reset"></input>
-                            <input type="submit" class="js-submit button" value="calculate"></input>
-                        </div>
-                    </form>
-
-                    <div class="calculator__btc-portfolio">
-                        <img src="img/chart4.jpg" alt="">
-                    </div>
+    <section class="why-bitcoin-head">
+        <div class="why-bitcoin-head__wrap">
+            <img src="img/bitcoin-glass.png" alt="" class="why-bitcoin-head__img">
+            <div class="why-bitcoin-head__content">
+                <h1 class="why-bitcoin-head__title">
+                    Why Hold Bitcoin?
+                </h1>
+                <div class="why-bitcoin-head__description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
                 </div>
-
-                <div class="js-drop-down-list calculator-deatils">
-                    <button class="js-drop-down-button calculator-deatils__button button-gray-icon-right">
-                        details
-                    </button>
-                    <div class="js-drop-down-content calculator-deatils__wrap">
-                        <div class="calculator-table">
-                            <div class="calculator-table__wrap">
-                                <div class="calculator-table-element calculator-table__header">
-                                    <div class="calculator-table-element__item">
-                                        Date
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        SPX Value
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        BTC Value
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        Portfolio Value
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        Return
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        1+Return
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        Cumulative Return
-                                    </div>
-                                </div>
-
-                                <div class="calculator-table-element">
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                </div>
-
-                                <div class="calculator-table-element">
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                </div>
-
-                                <div class="calculator-table-element">
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                </div>
-
-                                <div class="calculator-table-element">
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                </div>
-
-                                <div class="calculator-table-element">
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                    <div class="calculator-table-element__item">
-                                        12/1/15
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="calculator-sidebar">
-                            <div class="calculator-sidebar__wrap">
-                                <div class="calculator-sidebar-item">
-                                    <div class="calculator-sidebar-item__key">
-                                        Average
-                                    </div>
-                                    <div class="calculator-sidebar-item__value">
-                                        20.14%
-                                    </div>
-                                </div>
-
-                                <div class="calculator-sidebar-item">
-                                    <div class="calculator-sidebar-item__key">
-                                        Average
-                                    </div>
-                                    <div class="calculator-sidebar-item__value">
-                                        20.14%
-                                    </div>
-                                </div>
-
-                                <div class="calculator-sidebar-item">
-                                    <div class="calculator-sidebar-item__key">
-                                        Average
-                                    </div>
-                                    <div class="calculator-sidebar-item__value">
-                                        20.14%
-                                    </div>
-                                </div>
-
-                                <div class="calculator-sidebar-item">
-                                    <div class="calculator-sidebar-item__key">
-                                        Average
-                                    </div>
-                                    <div class="calculator-sidebar-item__value">
-                                        20.14%
-                                    </div>
-                                </div>
-
-                                <div class="calculator-sidebar-item">
-                                    <div class="calculator-sidebar-item__key">
-                                        Average
-                                    </div>
-                                    <div class="calculator-sidebar-item__value">
-                                        20.14%
-                                    </div>
-                                </div>
-
-                                <div class="calculator-sidebar-item">
-                                    <div class="calculator-sidebar-item__key">
-                                        Average
-                                    </div>
-                                    <div class="calculator-sidebar-item__value">
-                                        20.14%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
+                <ul>
+                    <li>
+                        Bitcoin is, in fact, a worldwide store of value
+                    </li>
+                    <li>
+                        Inflation hedge with finite number in circulation (a maximum of 21 million coins)
+                    </li>
+                    <li>
+                        Historically, BTC seems to replay its past bull run waves post-halvings.
+                    </li>
+                    <li>
+                        Price – Bitcoin 2021 Has Similar Footings as Big Gains in 2013, 2017
+                    </li>
+                    <li>
+                        Supply – Bitcoin’s Fixed Supply a Unique Attribute vs. Unlimited Cryptos
+                    </li>
+                    <li>
+                        Demand – The Only Bitcoin Metric That Really Matters: Increasing Demand
+                    </li>
+                    <li>
+                        Currency – 2020 May Mark No Going Back as Bitcoin’s Becoming Digital Gold
+                    </li>
+                </ul>
             </div>
-
-
-        </section>
-
-    </div>
-
-
+        </div>
+    </section>
 
 
     <section class="bought-bitcoin">
@@ -543,6 +297,39 @@
 
     </div>
 </section>
+
+    <section class="border-text container">
+        <div class="border-text__wrap">
+            <div class="border-text-item">
+                <div class="border-text-item__text">
+                    The world’s economies are entering strong expansionary monetary phases — generalized quantitative
+                    easing, so to speak — as a reaction to the COVID-19 pandemic. Bitcoin, so far, has outperformed
+                    every asset class throughout the crisis, spurring new demand and earning its wings as a global store
+                    of value
+                </div>
+            </div>
+
+            <div class="border-text-item">
+                <div class="border-text-item__text">
+                    18.5 million Bitcoin currently in circulation, he acknowledged that this number does not take into
+                    account a large portion of Bitcoin that have not moved for a long time. This means the real
+                    available supply is actually smaller.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bitcoin-map">
+        <div class="container">
+            <div id="container" style="height: 400px; min-width: 310px"></div>
+        </div>
+    </section>
+
+
+
+
+
     <section class="products">
     <div class="container products__wrap">
         <h2 class="products__title">Products</h2>
@@ -652,11 +439,11 @@
 
 </body>
 
-<script src="js/libs/custom-select.min.js"></script>
-<script src="js/libs/datepicker.min.js"></script>
 <script src="js/libs/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/chart.js"></script>
 <script src="js/slider.js"></script>
+
 
 
 </html>

@@ -277,7 +277,18 @@ document.addEventListener('click', function (e) {
     }
 });
 
-
+//custom-select
 if(document.querySelector('.custom-select')) {
     customSelect('.custom-select');
 }
+
+
+//data-picker
+
+for(let customDate of document.querySelectorAll('.custom-date')) {
+    const picker = datepicker(customDate);
+}
+
+
+
+
