@@ -285,7 +285,7 @@ if(document.querySelector('.custom-select')) {
 
 //data-picker
 
-
+/* 
 for(const customDate of document.querySelectorAll('.custom-date')) {
     var picker = new Pikaday({
         field: customDate,
@@ -307,7 +307,7 @@ for(const customDate of document.querySelectorAll('.custom-date')) {
         }
     });
     
-}
+} */
 
 
 
